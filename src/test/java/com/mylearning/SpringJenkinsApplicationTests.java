@@ -17,7 +17,7 @@ class SpringJenkinsApplicationTests {
 	@Test
 	void addTest() {
 		logger.info("Spring Test ApplicationTests Addition");
-		assertEquals(3, app.add(2, 2));
+		assertEquals(4, app.add(2, 2));
 	}
 	
 	@Test
@@ -26,4 +26,9 @@ class SpringJenkinsApplicationTests {
 		assertEquals(6, app.multiply(3, 2));
 	}
 
+	@Test
+	void substractTest() {
+		logger.info("Spring Test ApplicationTests Substract");
+		assertEquals(1, app.substract(3, 2));
+	}
 }

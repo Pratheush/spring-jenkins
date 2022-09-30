@@ -22,4 +22,9 @@ public class SpringJenkinsApplication {
 	public Integer multiply(Integer num1,Integer num2) {
 		return num1*num2;
 	}
+	
+	public Integer substract(Integer num1,Integer num2) {
+		if(num1>num2) return num1-num2;
+		else return num2-num1;
+	}
 }
