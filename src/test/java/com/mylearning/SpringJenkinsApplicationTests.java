@@ -17,7 +17,7 @@ class SpringJenkinsApplicationTests {
 	@Test
 	void addTest() {
 		logger.info("Spring Test ApplicationTests Addition");
-		assertEquals(4, app.add(2, 2));
+		assertEquals(3, app.add(2, 2));
 	}
 	
 	@Test
