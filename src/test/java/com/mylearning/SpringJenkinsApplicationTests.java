@@ -18,6 +18,7 @@ class SpringJenkinsApplicationTests {
 	
 	@BeforeAll
 	static void init() {
+		logger.info("@BeforeAll");
 		app=new SpringJenkinsApplication();	
 	}
 	
