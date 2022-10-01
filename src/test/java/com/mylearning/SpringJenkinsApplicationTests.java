@@ -3,6 +3,7 @@ package com.mylearning;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,7 +14,12 @@ class SpringJenkinsApplicationTests {
 
 	private static final Logger logger=LoggerFactory.getLogger(SpringJenkinsApplication.class);
 	
-	SpringJenkinsApplication app=new SpringJenkinsApplication();
+	private SpringJenkinsApplication app;
+	
+	@BeforeAll
+	void init() {
+		app=new SpringJenkinsApplication();	
+	}
 	
 	@Test
 	void addTest() {
