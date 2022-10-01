@@ -1,5 +1,6 @@
 package com.mylearning;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
@@ -30,5 +31,6 @@ class SpringJenkinsApplicationTests {
 	void substractTest() {
 		logger.info("Spring Test ApplicationTests Substract");
 		assertEquals(1, app.substract(3, 2));
+		assertThat(app.substract(5, 3)).isEqualTo(2);
 	}
 }
