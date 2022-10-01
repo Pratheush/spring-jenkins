@@ -14,10 +14,10 @@ class SpringJenkinsApplicationTests {
 
 	private static final Logger logger=LoggerFactory.getLogger(SpringJenkinsApplication.class);
 	
-	private SpringJenkinsApplication app;
+	private static SpringJenkinsApplication app;
 	
 	@BeforeAll
-	void init() {
+	static void init() {
 		app=new SpringJenkinsApplication();	
 	}
 	
